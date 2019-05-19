@@ -1,0 +1,9 @@
+/* Add here all your css styles (customizations) */
+.checked {
+    color: orange;
+}
+
+/* Color Light Red */
+.g-bg-lightblue {
+  background-color: #3393FF !important;
+}

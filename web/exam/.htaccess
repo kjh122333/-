@@ -1,0 +1,3 @@
+RewriteEngine On
+
+RewriteRule ^list/(.*) php/list.php?page=$1

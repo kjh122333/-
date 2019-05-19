@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/sensorhour_ymdh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-08-22 17"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/avgh_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sensorhour_ymdh"
+            android:layout_below="@+id/sensorhour_ymdh"
+            android:text="시간당 평균 : "
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/sensorhour_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22.22"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_below="@+id/sensorhour_ymdh"
+            android:layout_toRightOf="@+id/avgh_text"/>
+
+        <TextView
+            android:id="@+id/cnth_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="     시간당 데이터 수 : "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_below="@+id/sensorhour_ymdh"
+            android:layout_toRightOf="@+id/sensorhour_avg"/>
+
+        <TextView
+            android:id="@+id/sensorhour_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/cnth_text"
+            android:layout_alignTop="@+id/sensorhour_avg"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/btnLogout"
+        android:title="로그아웃"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/btnRefresh"
+        android:title="새로고침"
+        android:icon="@drawable/ic_autorenew_black_24dp"
+        app:showAsAction="always"
+        />
+</menu>

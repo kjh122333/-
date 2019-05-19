@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/sensorminute_ymdhm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-08-22 16:59"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/avgm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sensorminute_ymdhm"
+            android:layout_below="@+id/sensorminute_ymdhm"
+            android:text="분당 평균 : "
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/sensorminute_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22.22"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_below="@+id/sensorminute_ymdhm"
+            android:layout_toRightOf="@+id/avgm_text"/>
+
+        <TextView
+            android:id="@+id/cntm_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      분당 데이터 수 : "
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_below="@+id/sensorminute_ymdhm"
+            android:layout_toRightOf="@+id/sensorminute_avg"/>
+
+        <TextView
+            android:id="@+id/sensorminute_cnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/cntm_text"
+            android:layout_alignTop="@+id/sensorminute_avg"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
